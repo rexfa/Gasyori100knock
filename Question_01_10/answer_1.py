@@ -1,5 +1,6 @@
 import cv2
-
+#cv2默认为 BGR顺序
+# img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) # cv2默认为bgr顺序
 # Read image
 img = cv2.imread("imori.jpg")
 b = img[:, :, 0].copy()

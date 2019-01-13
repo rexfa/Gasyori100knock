@@ -6,7 +6,7 @@ b = img[:, :, 0].copy()
 g = img[:, :, 1].copy()
 r = img[:, :, 2].copy()
 
-# RGB > BGR
+# RGB > BGR  R和B换位置
 img[:, :, 0] = r
 img[:, :, 1] = g
 img[:, :, 2] = b

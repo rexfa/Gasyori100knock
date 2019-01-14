@@ -11,7 +11,7 @@ r = img[:, :, 2].copy()
 out = 0.2126 * r + 0.7152 * g + 0.0722 * b
 out = out.astype(np.uint8)
 
-# Binarization
+# Binarization 二值化，将阈值（128）上下两部分完全分开
 th = 128
 out[out < th] = 0
 out[out >= th] = 255

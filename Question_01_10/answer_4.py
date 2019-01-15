@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-# 自适应阈值二值化,使用大律（OTSU）算法得到的全局自适应阈值
+# 自适应阈值二值化,使用大津（OTSU）算法得到的全局自适应阈值
 # Read image
 img = cv2.imread("imori.jpg").astype(np.float)
 #高度，宽度，深度（the pixels value is made up of three primary colors像素值由三原色组成）

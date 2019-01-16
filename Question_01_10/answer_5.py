@@ -8,11 +8,11 @@ g = img[:, :, 1].copy()
 r = img[:, :, 2].copy()
 
 # RGB > HSV
-out = np.zeros_like(img)
+out = np.zeros_like(img) #建立一个和img大小一样的全零数组
 
-max_v = np.max(img, axis=2).copy()
-min_v = np.min(img, axis=2).copy()
-min_arg = np.argmin(img, axis=2)
+max_v = np.max(img, axis=2).copy() # 取出最大第三维数组
+min_v = np.min(img, axis=2).copy() # 取出最小第三维数组
+min_arg = np.argmin(img, axis=2) # 取出最小第三维的索引
 
 H = np.zeros_like(max_v)
 

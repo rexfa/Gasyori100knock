@@ -7,7 +7,7 @@ b = img[:, :, 0].copy()
 g = img[:, :, 1].copy()
 r = img[:, :, 2].copy()
 
-# RGB > HSV
+# RGB > HSV 快速近似转换算法
 out = np.zeros_like(img) #建立一个和img大小一样的全零数组
 
 max_v = np.max(img, axis=2).copy() # 取出最大第三维数组

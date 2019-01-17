@@ -4,7 +4,7 @@ import numpy as np
 # Read image
 img = cv2.imread("imori.jpg")
 
-# Max Pooling
+# Max Pooling 最大汇集
 out = img.copy()
 
 H, W, C = img.shape

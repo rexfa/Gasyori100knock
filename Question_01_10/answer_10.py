@@ -6,7 +6,7 @@ img = cv2.imread("imori_noise.jpg")
 H, W, C = img.shape
 
 
-# Median Filter
+# Median Filter 中位数滤波器
 K_size = 3
 
 ## Zero padding

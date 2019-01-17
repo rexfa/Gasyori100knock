@@ -17,3 +17,6 @@ print (d[...,2])
 print (d[...,0]+d[...,1]+d[...,2])
 v = range(0, 2, 1)
 print (v)
+print ("***************")
+for num, i in enumerate(range(0, 2, 1)):
+    print(num,i)

@@ -4,7 +4,7 @@ import numpy as np
 # Read image
 img = cv2.imread("imori.jpg")
 
-# Average Pooling
+# Average Pooling 平均汇集 
 out = img.copy()
 
 H, W, C = img.shape
@@ -13,6 +13,7 @@ Nh = int(H / G)
 Nw = int(W / G)
 
 for y in range(Nh):
+    print(y)
     for x in range(Nw):
         for c in range(C):
             out[G*y:G*(y+1), G*x:G*(x+1), c] = np.mean(out[G*y:G*(y+1), G*x:G*(x+1), c]).astype(np.int)

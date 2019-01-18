@@ -11,7 +11,7 @@ K_size = 3
 sigma = 1.3
 
 ## Zero padding
-pad = K_size // 2
+pad = K_size // 2 # 确定模糊范围
 out = np.zeros((H + pad*2, W + pad*2, C), dtype=np.float)
 out[pad:pad+H, pad:pad+W] = img.copy().astype(np.float)
 

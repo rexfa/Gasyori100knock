@@ -9,8 +9,8 @@ H, W, C = img.shape
 # Median Filter
 K_size = 3
 
-K = np.diag( [1] * K_size ).astype(np.float)
-K /= K_size
+K = np.diag( [1] * K_size ).astype(np.float) # 取出对角线数据
+K /= K_size #求平均
 
 ## Zero padding
 pad = K_size // 2

@@ -1,6 +1,9 @@
 import cv2
 import numpy as np
-
+# MAX-MIN滤波器是一个滤波器，它输出滤波器中像素的最大值和最小值之间的差值，
+# 并且是用于边缘检测的滤波器之一。 边缘检测用于检测图像中的线，并且用于提
+# 取这种图像中的信息的操作被称为特征提取。 在边缘检测中，在大多数情况下，
+# 对灰度图像执行滤波。
 # Read image
 img = cv2.imread("imori.jpg").astype(np.float)
 H, W, C = img.shape

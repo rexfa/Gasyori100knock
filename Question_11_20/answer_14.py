@@ -12,7 +12,8 @@ r = img[:, :, 2].copy()
 # Gray scale
 gray = 0.2126 * r + 0.7152 * g + 0.0722 * b
 gray = gray.astype(np.uint8)
-
+# 索贝尔滤波器
+# 一般用于边缘检测
 # sobel Filter
 K_size = 3
 
